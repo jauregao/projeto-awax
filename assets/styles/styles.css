@@ -10,7 +10,7 @@
   /* 300, 400, 600 e 700*/
 }
 
-.container {
+.container-menu {
   max-width: 1140px;
   width: 1140px;
   display: flex;
@@ -122,7 +122,14 @@ li a:hover,
   margin-bottom: 50px;
 }
 
-.slide-area button {
+button {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+
+  cursor: pointer;
+
   background-color: var(--main-color);
   padding: 15px 50px;
 
@@ -132,7 +139,7 @@ li a:hover,
   transition: 500ms linear;
 }
 
-.slide-area button:hover {
+button:hover {
   background-color: #c38f5b;
   transition: 500ms linear;
 }
@@ -163,6 +170,108 @@ li a:hover,
   background-color: var(--main-color);
 }
 
-/* SECTION 1 */
+/* SECTION ABOUT US */
 
+.container {
+  max-width: 1140px;
+  width: 1140px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.default {
+  margin: auto;
+  padding: 50px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.default.light{
+  background-color: #f7f7f7;
+}
+
+.default.light .section-title, .default.light .section-body{
+  color: #000;
+}
+.default.dark{
+  background-color: #000;
+}
+
+.default.dark .section-title, .default.dark .section-body{
+  color: #fff;
+}
+
+.section-title , .section-desc{
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.section-desc {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8c8c8c;
+
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.section-aboutus {
+  display: flex;
+}
+
+.section-aboutus .content {
+  flex: 1;
+}
+
+.section-aboutus .video {
+  width: 450px;
+  aspect-ratio: 16/9;
+  background-image: url(../media/complementos/foto9.jpg);
+  background-position: center;
+  background-size: cover;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.video .videotxt{
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.videotxt img {
+  width: 140px;
+  height: 140px;
+
+  cursor: pointer;
+}
+
+.videotxt span{
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 34px;
+}
+
+.content p {
+  font-size: 14px;
+  font-weight: 400;
+
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+/* SECTION SERVICES */
