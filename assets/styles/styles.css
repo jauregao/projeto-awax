@@ -40,7 +40,7 @@ ul li {
   list-style: none;
 }
 
-li a {
+.menu li a {
   font-weight: 600;
   font-size: 14px;
 
@@ -59,8 +59,8 @@ li a {
   border-bottom: 5px solid #000;
 }
 
-li a:hover,
-.active a{
+.menu li a:hover,
+.menu .active a{
   border-bottom: 4px solid var(--main-color);
   color: #d5d5d5;
 }
@@ -275,3 +275,142 @@ button:hover {
 }
 
 /* SECTION SERVICES */
+
+.section-services {
+  display: flex;
+}
+
+.iconbox:first-child {
+  border-left: 2px solid #b2875650;
+}
+.iconbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+
+  padding: 0 30px;
+
+  border-right: 2px solid #b2875650;
+}
+
+.iconbox p {
+  font-size: 12px;
+  text-align: center;
+  color: #8c8c8c;
+}
+
+.iconbox h4 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.iconbox img {
+  margin-bottom: 30px;
+}
+
+/* SECTION PROJECTS */
+
+.section-projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-categories {
+  background-color: #ededed;
+  padding: 0px 20px;
+
+  border: 1px solid rgba(0, 0, 0, 0.276);
+  border-radius: 20px;
+
+  margin-bottom: 30px;
+}
+
+.filter-categories ul {
+  gap: 0;
+}
+
+.filter-categories li{
+  display: inline-block;
+  padding: 10px 20px;
+  height: 40px;
+  
+  border-left: 1px solid rgba(0, 0, 0, 0.276);
+  cursor: pointer;
+}
+
+.filter-categories li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+
+  border-bottom: 3px solid #ededed;
+}
+
+.filter-categories li:first-child {
+  border-left: 0;
+}
+
+.filter-categories li:hover, 
+.filter-categories .active {
+  border-bottom: 3px solid var(--main-color);
+}
+
+.photos {
+  width: 100vw;
+  max-width: 1140px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 30px;
+  justify-content: center;
+
+  margin-bottom: 30px;
+}
+
+.photo:hover .show {
+  display: flex;
+}
+
+.photo {
+  width: 360px;
+}
+
+.photo img {
+  width: 360px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.show {
+  width: inherit;
+  height: inherit;
+  aspect-ratio: 4/3;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+  position: absolute;
+  
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.show h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.show p {
+  font-size: 16px;
+  text-align: center;
+}
