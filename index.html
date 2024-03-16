@@ -16,6 +16,7 @@
 <header>
   <div class="container-menu header">
     <img src="./assets/images/icones/Logo.png" alt="logo">
+    <img src="./assets/images/icones/menu.png" alt="menu" class="menu-icon">
     <div class="menu">
       <nav>
         <ul>
@@ -231,7 +232,7 @@
               </div>
             </div>
           </div>
-          <div class="colab-card">
+          <div class="colab-card hidden">
             <div class="avatar">
               <img src="./assets/media/complementos/homem1.png" alt="mulher 1">
             </div>
@@ -260,7 +261,7 @@
                 </div>
               </div>
             </div>
-            <div class="colab-card">
+            <div class="colab-card hidden">
               <div class="avatar">
                 <img src="./assets/media/complementos/mulher2.png" alt="mulher 1">
               </div>
@@ -332,16 +333,16 @@
     <div class="brand-logo">
       <img src="./assets/media/complementos/empresa2.png" alt="logo2">
     </div>
-    <div class="brand-logo">
+    <div class="brand-logo hide">
       <img src="./assets/media/complementos/empresa3.png" alt="logo3">
     </div>
-    <div class="brand-logo">
+    <div class="brand-logo hide">
       <img src="./assets/media/complementos/empresa4.png" alt="logo4">
     </div>
-    <div class="brand-logo">
+    <div class="brand-logo hide">
       <img src="./assets/media/complementos/empresa5.png" alt="logo5">
     </div>
-    <div class="brand-logo">
+    <div class="brand-logo hide">
       <img src="./assets/media/complementos/empresa6.png" alt="logo6">
     </div>
     </div>
@@ -564,7 +565,7 @@
           <p>www.envato.com.br</p>
           </div>
         </div>
-        <div></div>
+        <div class="empty"></div>
       </div>
     </section>
 </main>
@@ -617,5 +618,19 @@
     </div>
   </section>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('.menu-icon').addEventListener('click', function () {
+        let menu = document.querySelector('.menu');
+
+        if (menu.style.display === 'none' || menu.style.display === '') {
+          menu.style.display = 'flex';
+        } else {
+          menu.style.display = 'none';
+        }
+      })
+  })
+</script>
 </body>
 </html>
